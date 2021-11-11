@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     // Let's clone the source
-                    git 'https://github.com/ihebsd/Timesheet-CI-Project.git';
+                    git 'https://github.com/BenArfanour/CI-CD.git';
                 }
             }
         }
