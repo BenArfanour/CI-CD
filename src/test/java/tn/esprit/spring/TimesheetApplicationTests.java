@@ -35,25 +35,6 @@ class TimesheetApplicationTests {
 		}
 	}
 
-	@Test
-	void suppressionEmployee() {
-		int nb_avans_suppression=employeService.getNombreEmployeJPQL();
 
-		try {
-			System.out.println(nb_avans_suppression);
-			employeService.deleteEmployeById(11);
-			int nb_apres_suppression=employeService.getNombreEmployeJPQL();
-			System.out.println(nb_apres_suppression);
-			boolean test=(nb_apres_suppression!=nb_avans_suppression)?true:false;
-		
-		assertEquals(test, true,"L'employé a été supprimé avec succés");	
-		if(test) {
-			l.info("employee avec id "+11+" deleted  successfully ");
-		}
-		} catch (Exception e) {
-			// TODO: handle exception
-			System.out.println(e);
-		}
-	}
 
 }
