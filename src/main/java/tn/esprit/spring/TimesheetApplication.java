@@ -19,7 +19,10 @@ import tn.esprit.spring.config.LoginFilter;
 @EnableAutoConfiguration
 public class TimesheetApplication {
 
-	public static void main(String[] args) {SpringApplication.run(TimesheetApplication.class, args);}
+	public static void main(String[] args) {SpringApplication.run(TimesheetApplication.class, args);
+	System.out.println( "Hello World!" );
+	/*shesshh*/
+	}
 
 	@Bean
 	public ServletRegistrationBean servletRegistrationBean() {
@@ -31,7 +34,7 @@ public class TimesheetApplication {
 		FilterRegistrationBean rwFilter = new FilterRegistrationBean(new RewriteFilter());
 		rwFilter.setDispatcherTypes(EnumSet.of(DispatcherType.FORWARD, DispatcherType.REQUEST, DispatcherType.ASYNC, DispatcherType.ERROR));
 		rwFilter.addUrlPatterns("/*");
-		return rwFilter;
+		return rwFilter ;
 	}
 
 
