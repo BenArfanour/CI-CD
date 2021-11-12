@@ -11,8 +11,8 @@
 	<groupId>tn.esprit.spring</groupId>
 	<artifactId>raslen</artifactId>
 	<version>1.0</version>
-	<name>raslen</name>
-	<description>raslen</description>
+	<name>Nour</name>
+	<description>Nour</description>
 
 	<properties>
 		<java.version>1.8</java.version>
